@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noxline – L'art du détail</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #cccccc;
+    }
+    header {
+      background: url('https://cdn.pixabay.com/photo/2017/01/06/19/15/porsche-1954773_1280.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      letter-spacing: 8px;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    header p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-style: italic;
+      margin-top: 1rem;
+      position: relative;
+      z-index: 1;
+      color: #d0d0d0;
+    }
+    section {
+      padding: 6rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      letter-spacing: 2px;
+      color: #ffffff;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+    .service {
+      background-color: #141414;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(255,255,255,0.1);
+    }
+    .service h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #e0e0e0;
+    }
+    .service p {
+      font-size: 0.95rem;
+      color: #bbbbbb;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .cta a {
+      background-color: #ffffff;
+      color: #0a0a0a;
+      padding: 1rem 2.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background 0.3s ease;
+    }
+    .cta a:hover {
+      background-color: #dddddd;
+    }
+    .image-banner {
+      background: url('https://images.unsplash.com/photo-1605559424843-8d9a3fc8ffcc') no-repeat center center/cover;
+      height: 70vh;
+      margin: 4rem 0;
+      position: relative;
+    }
+    .image-banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .image-banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      z-index: 1;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Noxline</div>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Galerie</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Noxline</h1>
+    <p>L’art du détail, signé Noxline.</p>
+  </header>
+
+  <section>
+    <h2>À propos</h2>
+    <p>Noxline est une maison de design automobile spécialisée dans l'excellence : detailing haut de gamme, covering précis, vitres teintées avec soin et marquage graphique raffiné. Inspirée par les codes du luxe et du design, notre signature transforme chaque véhicule en œuvre d’art.</p>
+  </section>
+
+  <div class="image-banner">
+    <div class="image-banner-text">L’élégance rencontre la performance</div>
+  </div>
+
+  <section>
+    <h2>Nos services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Detailing Premium</h3>
+        <p>Restauration intérieure & extérieure dans les moindres détails. Une approche minutieuse pour une finition irréprochable.</p>
+      </div>
+      <div class="service">
+        <h3>Covering sur mesure</h3>
+        <p>Un habillage vinyle haut de gamme, aux finitions parfaites, personnalisable selon vos envies.</p>
+      </div>
+      <div class="service">
+        <h3>Vitres & feux teintés</h3>
+        <p>Alliez esthétique, performance thermique et discrétion avec nos teintes premium.</p>
+      </div>
+      <div class="service">
+        <h3>Design graphique & marquage</h3>
+        <p>Branding, identité visuelle et marquage véhicule haut de gamme. Pour les professionnels exigeants.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <a href="#">Demander un devis</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Noxline – Tous droits réservés. | contact@noxline.fr
+  </footer>
+</body>
+</html>
